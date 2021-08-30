@@ -77,6 +77,11 @@ a += 1 # same as a = a + 1
 
 # Defining Functions, Returning Values (Notice, no brackets)
 # Allows us to reuse the code
+
+def my_function():
+  print("Hello from a function")
+
+
 def add(in_1, in_2):
     return in_1 + in_2
 
@@ -85,11 +90,19 @@ def sub(in_1, in_2):
     return in_1 - in_2
 
 
-def operate(in_1, in_2, operator):
+# Normal arguments
+sub1 = sub(2, 1)
+# Keyword Arguments
+sub2 = sub(in_2=2, in_1=1)
+
+
+# Passing functions and default parameters
+def operate(in_1, in_2, operator=add):
     return operator(in_1, in_2)
 
 
 print(operate(3, 2, sub))
+print(operate(3, 2))
 
 # Comparing Things (logical expressions)
 c1 = 3

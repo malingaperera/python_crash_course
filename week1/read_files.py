@@ -19,6 +19,7 @@ with open("in.txt", "r") as f:
     for line in lines:
         print(line)
 
+# looping will be covered again in next week
 with open("in.txt", "r") as f:
     line = f.readline()
     while line:
