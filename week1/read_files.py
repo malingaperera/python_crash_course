@@ -34,6 +34,15 @@ with open("in.txt", "r") as f:
     for i in range(a):
         print(f.readline())
 
+# more than one value in a line
+with open("in2.txt", "r") as f:
+    a = int(f.readline())
+    for i in range(a):
+        line = f.readline()
+        values = line.split(' ')
+        print(values[0] + ' got ' + str(int(values[1]) + int(values[2])) + ' marks')
+
+
 # Writing and other modes (skipping x)
 # r 	Open the file for reading (default).
 # w 	Open the file for writing.
