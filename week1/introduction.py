@@ -51,7 +51,7 @@ f = int(str_a) + a
 
 # Other useful str(), float()
 print("Answer is " + a)
-print("Answer is " + str(a))
+print("Answer is " + str(a), end=' ')
 
 # More about strings later
 
