@@ -14,6 +14,7 @@ with open("in.txt", "r") as f:
     print(f.readline())
 
 # Reading lines
+# we will cover loops later
 with open("in.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
@@ -42,6 +43,7 @@ with open("in2.txt", "r") as f:
         line = f.readline()
         values = line.split(' ')
         print(values[0] + ' got ' + str(int(values[1]) + int(values[2])) + ' marks')
+        print(f"{values[0]} got {int(values[1]) + int(values[2])} marks")
 
 
 # Writing and other modes (skipping x)
