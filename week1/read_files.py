@@ -40,8 +40,8 @@ with open("in.txt", "r") as f:
 with open("in2.txt", "r") as f:
     a = int(f.readline())
     for i in range(a):
-        line = f.readline()
-        values = line.split(' ')
+        line = f.readline().strip()
+        values = line.split()
         print(values[0] + ' got ' + str(int(values[1]) + int(values[2])) + ' marks')
         print(f"{values[0]} got {int(values[1]) + int(values[2])} marks")
 

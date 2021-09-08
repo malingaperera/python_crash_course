@@ -14,7 +14,7 @@ d = [1, 1.23, "a", b]
 print(2 in a)
 
 # concat
-ab = a + b
+ab = a + list(b)
 
 # multiply
 a5 = a * 5
