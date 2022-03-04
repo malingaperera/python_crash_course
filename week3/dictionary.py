@@ -2,9 +2,9 @@
 # Key - any immutable (Strings, Ints, Tuples with stings and ints)
 tel = {'jack': 4098, 'sape': 4139}
 tel['guido'] = 4127
-tel
 
-tel['jack']
+
+print(tel['jack'])
 del tel['sape']
 
 # returns list of keys (only)
@@ -19,7 +19,8 @@ list(tel.values())
 sorted(tel)
 
 # check membership
-'guido' in tel
+if 'guido' in tel:
+    print('Yes')
 
 # Loops
 for k in tel:
@@ -31,6 +32,10 @@ for k, v in tel.items():
 
 # Dictionary Comprehension
 squares = {x: x*x for x in range(6)}
+
+squares = {}
+for i in range(6):
+    squares[i] = i*i
 
 # Dictionary Comprehension with if conditional
 odd_squares = {x: x*x for x in range(11) if x % 2 == 1}

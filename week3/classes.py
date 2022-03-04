@@ -8,6 +8,9 @@ class ClassName:
     att1 = 5
     att2 = "Sam"
 
+    def __init__(self):
+        print(5)
+
     def get_att1(self):
         return self.att1
 
@@ -17,11 +20,12 @@ cls_obj = ClassName()
 
 class ClassName:
     att1 = 5    # class variable, matters when you use vars that passed by pointers
-    a = []
 
-    def __init__(self, att2):
-        self.att2 = att2    # instance variable
+    def __init__(self, at):
+        self.att2 = at    # instance variable
+        self.a = []
         att1 = 10   # local variable for __init__
+        print(self.att1, "in the init")
 
     def get_att1(self):
         return self.att1
@@ -41,9 +45,8 @@ print(cls_obj3.a)
 
 # show moving it into init
 
+
 # Inheritance
-
-
 class ClassName2(ClassName):
     def get_att2(self):
         return self.att2
