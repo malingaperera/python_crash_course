@@ -46,17 +46,17 @@ type(a)
 # You can always check the data type of something using the type() function.
 str_a = "5"
 type(str_a)
-f = str_a + a # TypeError
+# f = str_a + a # TypeError
 f = int(str_a) + a
 
 # Other useful str(), float()
-print("Answer is " + a)
+# print("Answer is " + a)
 print("Answer is " + str(a), end=' ')
 
 # More about strings later
 
 # ValueError
-int("23 bottles")
+# int("23 bottles")
 
 # Expressions
 a = 5
@@ -132,4 +132,6 @@ if c1 == 3 or "ac" > "ab":
 a = '' # empty string, False
 # same goes for empty array, 0 int, None
 if a:
-    print("passed the test")
+    print("not empty")
+else:
+    print("found an empty")

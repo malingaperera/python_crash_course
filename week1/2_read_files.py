@@ -33,13 +33,13 @@ with open("in.txt", "r") as f:
 
 with open("in.txt", "r") as f:
     a = int(f.readline())
-    for i in range(a):
+    for _ in range(a):
         print(f.readline())
 
 # more than one value in a line
 with open("in2.txt", "r") as f:
-    a = int(f.readline())
-    for i in range(a):
+    no_of_stu = int(f.readline())
+    for _ in range(no_of_stu):
         line = f.readline().strip()
         values = line.split()
         print(values[0] + ' got ' + str(int(values[1]) + int(values[2])) + ' marks')

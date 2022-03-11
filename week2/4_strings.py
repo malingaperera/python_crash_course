@@ -1,8 +1,9 @@
 # string is a char sequence
+# See the similarity with lists, most of the things you did with a list can be done using a string
 a = 'apple'
-a[0]
-a[1:3]
-a[::-1]
+print(a[0])
+print(a[1:3])
+print(a[::-1])
 
 # checks str.isalpha(), str.isdecimal(), str.isdigit()
 a.isalnum()
@@ -12,6 +13,6 @@ a.split()
 a.strip()
 
 # check for substrings
-'ap' in a
+print('ap' in a)
 a.startswith('ap')
 a.index('le')

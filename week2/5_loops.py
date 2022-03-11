@@ -1,3 +1,4 @@
+# A simple loop can be run on any iterable, like ranges, lists, dictionaries
 for i in range(10):
     print(i)
 
@@ -5,6 +6,8 @@ a = ["a", "b", "c"]
 for i in a:
     print(i)
 
+# While loop is bit different as, it won't take care of variable definition and increment
+# mostly used when the variable increment is not simple
 i = 0
 while i < 6:
     print(i)
@@ -24,6 +27,7 @@ for i in range(10):
         break
     print(i)
 
+# Breaks to stop infinite loops
 i = 0
 while True:
     print(i)
