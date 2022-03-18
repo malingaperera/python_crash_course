@@ -1,5 +1,5 @@
 # A simple loop can be run on any iterable, like ranges, lists, dictionaries
-for i in range(10):
+for i in range(2, 10, 2):
     print(i)
 
 a = ["a", "b", "c"]

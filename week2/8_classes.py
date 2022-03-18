@@ -25,7 +25,8 @@ class ClassName:
         self.att2 = at    # instance variable
         self.a = []
         att1 = 10   # local variable for __init__
-        print(self.att1, "in the init")
+        print(att1, "local att1 in the init")
+        print(self.att1, "class att1 in the init")
 
     def get_att1(self):
         return self.att1

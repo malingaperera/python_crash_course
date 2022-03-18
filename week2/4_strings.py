@@ -1,6 +1,6 @@
 # string is a char sequence
 # See the similarity with lists, most of the things you did with a list can be done using a string
-a = 'apple'
+a = 'appledsasdfsle'
 print(a[0])
 print(a[1:3])
 print(a[::-1])
